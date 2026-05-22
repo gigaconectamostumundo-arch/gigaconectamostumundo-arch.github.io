@@ -1,3 +1,21 @@
+@media (max-width: 768px) {
+
+    nav {
+        flex-direction: column;
+    }
+
+    .seccion-flex {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+}
 /* ================= RESET ================= */
 * {
     margin: 0;

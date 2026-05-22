@@ -1,20 +1,12 @@
-@media (max-width: 768px) {
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-    nav {
-        flex-direction: column;
-    }
-
-    .seccion-flex {
-        flex-direction: column;
-    }
-
-    .card {
-        width: 90%;
-    }
-
-    h1 {
-        font-size: 30px;
-    }
+html, body {
+    width: 100%;
+    overflow-x: hidden;
 }
 /* ================= RESET ================= */
 * {
@@ -1168,4 +1160,42 @@ mark {
     padding: 2px 5px;
     border-radius: 5px;
     font-weight: bold;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width:768px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .header,
+    nav,
+    .left,
+    .seccion-flex,
+    .cards,
+    .footer-container {
+        flex-direction: column !important;
+        align-items: center;
+        text-align: center;
+    }
+
+    .texto,
+    .imagen,
+    .card {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+
+    nav a {
+        margin: 10px 0;
+    }
+
+    input,
+    button {
+        width: 90%;
+    }
 }

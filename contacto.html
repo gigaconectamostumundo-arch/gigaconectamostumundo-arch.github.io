@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIGA | Inicio</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="left">
+            <img src="img/logo.png" alt="GIGA" class="logo">
+
+            <div class="text">
+                <h1>GIGA</h1>
+                <p>¡Conectamos tu mundo!</p>
+            </div>
+        </div>
+
+        <div class="menu-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <!-- NAV -->
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="servicios.html">Servicios</a>
+        <a href="nosotros.html">Nosotros</a>
+        <a href="contacto.html">Contacto</a>
+        <a href="soporte.html">Soporte</a>
+        <a href="conocenos.html">Conocenos</a>
+
+        <input type="text" id="buscador" placeholder="Buscar palabra...">
+        <button onclick="buscarTexto()">Buscar</button>
+    </nav>
+
+
+
+    <!-- FORMULARIO GIGA -->
+    <section class="contenedor-giga">
+
+        <form action="https://formspree.io/f/mgoqkdoo" method="POST" class="form-giga">
+
+            <h2>Solicitud de Servicios Tecnológicos</h2>
+
+            <!-- NOMBRE -->
+            <label for="nombre">
+                Nombre o Empresa
+            </label>
+
+            <input type="text"
+                   id="nombre"
+                   name="nombre"
+                   placeholder="Ej. GIGA Tech / Juan Pérez"
+                   required>
+
+            <!-- TELÉFONO -->
+            <label for="telefono">
+                Teléfono
+            </label>
+
+            <input type="tel"
+                   id="telefono"
+                   name="telefono"
+                   placeholder="WhatsApp o Móvil">
+
+            <!-- CORREO -->
+            <label for="email">
+                Correo Corporativo
+            </label>
+
+            <input type="email"
+                   id="email"
+                   name="email"
+                   placeholder="nombre@empresa.com"
+                   required>
+
+            <!-- SERVICIO -->
+            <label for="servicio">
+                Servicio Requerido
+            </label>
+
+            <select id="servicio"
+                    name="servicio_giga"
+                    required>
+
+                <option value="">
+                    Selecciona una opción
+                </option>
+
+                <option value="instalacion">
+                    Instalación de Red
+                </option>
+
+                <option value="configuracion">
+                    Configuración de Equipos
+                </option>
+
+                <option value="mantenimiento">
+                    Mantenimiento
+                </option>
+
+                <option value="soporte">
+                    Soporte Técnico
+                </option>
+
+            </select>
+
+            <!-- ENTORNO -->
+            <label for="entorno">
+                Tipo de Entorno
+            </label>
+
+            <select id="entorno"
+                    name="entorno">
+
+                <option value="hogar">
+                    Hogar / Residencial
+                </option>
+
+                <option value="empresa">
+                    Empresa
+                </option>
+
+                <option value="corporativo">
+                    Corporativo
+                </option>
+
+            </select>
+
+            <!-- DISPOSITIVOS -->
+            <label for="dispositivos">
+                Número de dispositivos
+            </label>
+
+            <input type="number"
+                   id="dispositivos"
+                   name="cantidad_dispositivos"
+                   placeholder="Ej. 15">
+
+            <!-- PROBLEMA -->
+            <label>
+                ¿Presenta algún problema técnico?
+            </label>
+
+            <div class="radio-giga">
+
+                <label>
+                    <input type="radio"
+                           name="problema_actual"
+                           value="si">
+                    Sí
+                </label>
+
+                <label>
+                    <input type="radio"
+                           name="problema_actual"
+                           value="no">
+                    No
+                </label>
+
+            </div>
+
+            <!-- MENSAJE -->
+            <label for="mensaje">
+                Descripción detallada
+            </label>
+
+            <textarea id="mensaje"
+                      name="mensaje"
+                      rows="5"
+                      placeholder="Describe el problema o servicio..."
+                      required></textarea>
+
+            <!-- CHECKBOX -->
+            <div class="check-giga">
+
+                <label>
+
+                    <input type="checkbox"
+                           name="privacidad"
+                           required>
+
+                    Autorizo el tratamiento de datos.
+
+                </label>
+
+            </div>
+
+            <!-- BOTÓN -->
+            <button type="submit" class="btn-giga">
+                Enviar Solicitud
+            </button>
+
+        </form>
+
+    </section>
+
+    

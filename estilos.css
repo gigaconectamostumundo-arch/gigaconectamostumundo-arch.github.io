@@ -1165,86 +1165,119 @@ img {
     max-width: 100%;
     height: auto;
 }
-@media (max-width:768px){
+@media (max-width:768px) {
 
-    body{
-        overflow-x:hidden;
+    body {
+        overflow-x: hidden;
     }
 
-    /* HEADER */
+    /* ================= HEADER ================= */
     .header,
-    .left{
-        flex-direction:column;
-        text-align:center;
+    .left {
+        flex-direction: column;
+        text-align: center;
     }
 
-    /* NAV */
-    nav{
-        display:flex;
-        flex-direction:column;
-        align-items:center;
+    /* ================= QUITAR HAMBURGUESA ================= */
+    .menu-toggle,
+    .hamburguesa,
+    .menu-icon,
+    #menu-btn {
+        display: none !important;
     }
 
-    nav a{
-        display:block;
-        margin:10px 0;
+    /* ================= NAV ================= */
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        width: 100%;
     }
 
-    /* SECCIONES */
+        nav a {
+            display: block;
+            margin: 5px 0;
+            font-size: 18px;
+            width: 100%;
+            text-align: center;
+        }
+
+    /* ================= SECCIONES ================= */
     .seccion-flex,
     .servicio,
     .giga-footer,
-    .footer{
-        flex-direction:column !important;
-        text-align:center;
-        width:100%;
+    .footer,
+    .nosotros,
+    .inversa {
+        flex-direction: column !important;
+        text-align: center;
+        width: 100%;
+        padding: 20px;
     }
 
-    /* TEXTOS */
-    .seccion-flex h2,
-    .nosotros .texto h2,
-    .inversa.nosotros .texto h2,
-    .hero-soporte h2,
-    .faq h2,
-    .ticket h2{
-        font-size:32px;
+        /* ================= TEXTOS ================= */
+        .seccion-flex h2,
+        .nosotros .texto h2,
+        .inversa.nosotros .texto h2,
+        .hero-soporte h2,
+        .faq h2,
+        .ticket h2 {
+            font-size: 32px;
+            line-height: 1.2;
+        }
+
+        .seccion-flex p,
+        .nosotros .texto p,
+        .inversa.nosotros .texto p,
+        .texto p,
+        .texto li {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+    /* ================= IMAGENES ================= */
+    .imagen,
+    .imagen-servicio {
+        width: 100%;
+        display: flex;
+        justify-content: center;
     }
 
-    .seccion-flex p,
-    .nosotros .texto p,
-    .inversa.nosotros .texto p,
-    .texto p,
-    .texto li{
-        font-size:18px;
-        line-height:1.6;
-    }
+        .imagen img,
+        .imagen-servicio img,
+        .tarjeta img {
+            width: 100%;
+            max-width: 250px;
+            height: auto;
+        }
 
-    /* IMAGENES */
-    .imagen img,
-    .imagen-servicio img,
-    .tarjeta img{
-        width:100%;
-        max-width:250px;
-        height:auto;
-    }
-
-    /* BUSCADOR */
+    /* ================= BUSCADOR ================= */
     #buscador,
     nav input,
-    nav button{
-        width:90%;
-        margin-top:10px;
+    nav button {
+        width: 90%;
+        margin-top: 10px;
     }
 
-    /* CARDS */
+    /* ================= TARJETAS ================= */
     .tarjeta,
-    .card-soporte{
-        width:90%;
+    .card-soporte {
+        width: 90%;
+        margin: auto;
     }
 
-    /* FOOTER */
-    .footer-redes{
-        flex-direction:column;
-        gap:20px;
+    /* ================= FOOTER ================= */
+    .footer-redes {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .footer-left,
+    .footer-right {
+        width: 100%;
+        text-align: center;
     }
 }
